@@ -1,50 +1,84 @@
-# Welcome to your Expo app 👋
+# Flui Mobile
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+Projeto desenvolvido para o Enterprise Challenge FIAP.
 
-## Get started
+## Sobre o Projeto
 
-1. Install dependencies
+A Flui é uma aplicação mobile voltada para motoristas de veículos elétricos. O objetivo é facilitar a localização de pontos de recarga através de uma interface intuitiva, sustentável e acessível.
 
-   ```bash
-   npm install
-   ```
+Além da busca por estações de recarga, o aplicativo apresenta recursos voltados para segurança, acessibilidade e suporte familiar por meio da funcionalidade Flui Care.
 
-2. Start the app
+## Funcionalidades
 
-   ```bash
-   npx expo start
-   ```
+* Mapa de pontos de recarga
+* Busca de estações
+* Ficha detalhada dos carregadores
+* Sistema de favoritos
+* Perfil do usuário
+* EcoScore (indicadores de sustentabilidade)
+* Flui Care (segurança, acessibilidade e suporte familiar)
 
-In the output, you'll find options to open the app in a
+## Diferenciais
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+### Flui Care
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+O Flui Care amplia a experiência tradicional de aplicativos de recarga ao considerar fatores importantes para diferentes perfis de usuários.
 
-## Get a fresh project
+Entre os recursos simulados estão:
 
-When you're ready, run:
+* Proximidade de hospitais
+* Proximidade de farmácias
+* Fraldários
+* Salas de amamentação
+* Áreas monitoradas
+* Pontos acessíveis para pessoas com mobilidade reduzida
 
-```bash
-npm run reset-project
+### EcoScore
+
+O EcoScore apresenta indicadores ambientais relacionados ao uso de veículos elétricos:
+
+* CO₂ evitado
+* Uso de energia renovável
+* Metas sustentáveis da comunidade
+
+## Tecnologias Utilizadas
+
+* React Native
+* Expo SDK 54
+* Expo Router
+* TypeScript
+* GitHub
+
+## Estrutura do Projeto
+
+```text
+app/
+├── (tabs)/
+│   ├── index.tsx
+│   ├── mapa.tsx
+│   ├── busca.tsx
+│   ├── favoritos.tsx
+│   ├── perfil.tsx
+│   ├── care.tsx
+│   └── ecoscore.tsx
+│
+└── carregador/
+    └── [id].tsx
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+## Como Executar
 
-## Learn more
+```bash
+npm install
+npx expo start
+```
 
-To learn more about developing your project with Expo, look at the following resources:
+Abra o aplicativo utilizando o Expo Go.
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+## Integrantes
 
-## Join the community
+Adicionar nomes completos e RMs do grupo.
 
-Join our community of developers creating universal apps.
+## Repositório
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+https://github.com/biwnkw/flui-mobile
