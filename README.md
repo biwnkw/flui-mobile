@@ -77,7 +77,7 @@ Abra o aplicativo utilizando o Expo Go.
 
 ## Integrantes
 
-Adicionar nomes completos e RMs do grupo.
+Bianka S B Batista.
 
 ## Repositório
 
