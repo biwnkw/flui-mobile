@@ -1,33 +1,78 @@
-import { Tabs } from 'expo-router';
-import React from 'react';
-
-import { HapticTab } from '@/components/haptic-tab';
-import { IconSymbol } from '@/components/ui/icon-symbol';
-import { Colors } from '@/constants/theme';
-import { useColorScheme } from '@/hooks/use-color-scheme';
+import { Tabs } from "expo-router";
 
 export default function TabLayout() {
-  const colorScheme = useColorScheme();
-
   return (
     <Tabs
       screenOptions={{
-        tabBarActiveTintColor: Colors[colorScheme ?? 'light'].tint,
         headerShown: false,
-        tabBarButton: HapticTab,
-      }}>
+        tabBarActiveTintColor: "#4F6F52",
+        tabBarInactiveTintColor: "#8A8F8A",
+        tabBarStyle: {
+          backgroundColor: "#FAFAF8",
+          borderTopColor: "#E6E8E3",
+          height: 82,
+          paddingTop: 8,
+        },
+        tabBarLabelStyle: {
+          fontSize: 12,
+          fontWeight: "700",
+        },
+      }}
+    >
       <Tabs.Screen
         name="index"
         options={{
-          title: 'Home',
-          tabBarIcon: ({ color }) => <IconSymbol size={28} name="house.fill" color={color} />,
+          title: "Início",
         }}
       />
+
+      <Tabs.Screen
+        name="mapa"
+        options={{
+          title: "Mapa",
+        }}
+      />
+
+      <Tabs.Screen
+        name="busca"
+        options={{
+          title: "Busca",
+        }}
+      />
+
+      <Tabs.Screen
+        name="favoritos"
+        options={{
+          title: "Favoritos",
+        }}
+      />
+
+      <Tabs.Screen
+        name="perfil"
+        options={{
+          title: "Perfil",
+        }}
+      />
+
+      {/* Ocultas */}
+      <Tabs.Screen
+        name="care"
+        options={{
+          href: null,
+        }}
+      />
+
+      <Tabs.Screen
+        name="ecoscore"
+        options={{
+          href: null,
+        }}
+      />
+
       <Tabs.Screen
         name="explore"
         options={{
-          title: 'Explore',
-          tabBarIcon: ({ color }) => <IconSymbol size={28} name="paperplane.fill" color={color} />,
+          href: null,
         }}
       />
     </Tabs>
